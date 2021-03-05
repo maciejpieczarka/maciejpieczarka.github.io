@@ -56,6 +56,8 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: .2rem;
 }
 
 header nav ul li a:hover {
@@ -163,6 +165,7 @@ section {
     color: #fff;
     font-size: 4rem;
     margin-right: 2rem;
+    display: block;
 }
 
 .socials li a:hover {
@@ -217,7 +220,7 @@ section {
 .inputBox input[type="submit"] {
     width: 14rem;
     color: #fff;
-    background-color: #ff0083;
+    background-color: #33A1FD;
     cursor: pointer;
 }
 
