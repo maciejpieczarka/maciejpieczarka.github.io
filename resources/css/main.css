@@ -64,7 +64,7 @@ header nav ul li a:hover {
 }
 
 .wave {
-    max-width: 100rem;
+    max-width: 80rem;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -145,15 +145,6 @@ section {
     color: #312747;
 }
 
-.imgBox img{
-    position: relative;
-    top: 10rem;
-    max-width: 45rem;
-    width: 100%;
-    margin-top: 10rem;
-    z-index: 2;
-}
-
 .socials {
     position: absolute;
     left: 7rem;
@@ -170,7 +161,6 @@ section {
 
 .socials li a {
     color: #fff;
-    display: block;
     font-size: 4rem;
     margin-right: 2rem;
 }
@@ -254,11 +244,6 @@ section {
         max-width: 100%;
     }
 
-    .imgBox img {
-        max-width: 30rem;
-        margin-top: 0;
-    }
-
     .socials {
         left: 0;
         bottom: 6rem;
@@ -276,6 +261,10 @@ section {
 
     section {
         padding: 15rem 2rem 5rem;
+    }
+
+    .contentBox {
+        margin: 4rem 0;
     }
 
     .contentBox h2 {
@@ -304,7 +293,13 @@ section {
     }
 
     .socials {
-        left: 0;
+        position: relative;
+        top: 2rem;
+        left: -14rem;
+    }
+
+    .socials li a {
+        font-size: 2.5rem;
     }
 
     .newsletter {
@@ -315,9 +310,5 @@ section {
     .inputBox input {
         margin-top: 1rem;
         width: 100%;
-    }
-
-    .imgBox img {
-        max-width: 20rem;
     }
 }
