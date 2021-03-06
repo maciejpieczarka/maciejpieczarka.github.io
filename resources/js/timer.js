@@ -1,6 +1,6 @@
 const countDate = new Date('5 1, 2021 00:00:00').getTime();
 
-const count = () => {
+const timer = () => {
     const now = new Date().getTime();
     const gap = countDate - now;
 
@@ -21,6 +21,6 @@ const count = () => {
 };
 
 setInterval(() => {
-    count();
+    timer();
 }, 1000);
 

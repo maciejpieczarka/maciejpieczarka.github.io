@@ -78,6 +78,21 @@ section {
     margin: 0;
 }
 
+#typing {
+    font-weight: bold;
+    position: relative;
+    color: #33A1FD;
+}
+
+#typing::after {
+    content: "";
+    position: absolute;
+    width: .1rem;
+    height: 100%;
+    border-right: 2px solid #fff;
+    animation: blink 1s infinite;
+}
+
 .contentBox a {
     position: relative;
     margin-top: 1rem;
@@ -287,5 +302,19 @@ section {
     .inputBox input {
         margin-top: 1rem;
         width: 100%;
+    }
+}
+
+/* Animations */
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }
