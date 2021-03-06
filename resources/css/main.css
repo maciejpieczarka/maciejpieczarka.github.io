@@ -137,9 +137,7 @@ section {
 }
 
 .socials {
-    position: absolute;
-    left: 7rem;
-    bottom: 4rem;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,8 +151,8 @@ section {
 .socials li a {
     color: #fff;
     font-size: 4rem;
-    margin-right: 2rem;
     display: block;
+    margin-right: 2rem;
 }
 
 .socials li a:hover {
@@ -162,7 +160,7 @@ section {
     transform: scale(1.2);
 }
 
-.newsletter {
+.contact {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -182,35 +180,42 @@ section {
     opacity: 1;
 }
 
-.newsletter h2 {
+.contact h2 {
     font-size: 4.8rem;
     color: #312747;
     margin: 0;
 }
 
-.newsletter p {
-    font-size: 2rem;
+.contact p {
+    font-size: 1.8rem;
     color: #312747;
     margin: 0;
 }
 
-.inputBox {
+.contactBox {
     margin-top: 2rem;
 }
 
-.inputBox input {
-    padding: 1rem;
-    outline: none;
-    width: 30rem;
-    font-size: 1.8rem;
-    border: 1px solid #999;
+.contactFields {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
 
-.inputBox input[type="submit"] {
-    width: 14rem;
-    color: #fff;
-    background-color: #33A1FD;
-    cursor: pointer;
+.contactFields li {
+    font-weight: bold;
+    margin: .4rem 0;
+    font-size: 2rem;
+}
+
+.contactFields li a {
+    text-decoration: none;
+    color: #33A1FD;
+}
+
+.contactFields li span {
+    color: #33A1FD;
 }
 
 #close {
@@ -228,27 +233,17 @@ section {
 @media screen and (max-width: 1000px) {
     section {
         flex-direction: column;
-        padding-top: 15rem;
-        height: auto;
-    }
-
-    .contentBox {
-        max-width: 100%;
-    }
-
-    .socials {
-        left: 0;
-        bottom: 6rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        padding-top: 20rem;
     }
 }
 
 @media screen and (max-width: 770px) {
     header {
-        padding: 2rem 5rem;
+        padding: 2rem 1rem;
+    }
+
+    .socials li a {
+        font-size: 2.5rem;
     }
 
     section {
@@ -284,24 +279,9 @@ section {
         padding: 1rem 2.5rem;
     }
 
-    .socials {
-        position: relative;
-        top: 2rem;
-        left: -14rem;
-    }
-
-    .socials li a {
-        font-size: 2.5rem;
-    }
-
-    .newsletter {
+    .contact {
         width: 90%;
         padding: 3rem;
-    }
-
-    .inputBox input {
-        margin-top: 1rem;
-        width: 100%;
     }
 }
 

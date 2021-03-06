@@ -1,4 +1,4 @@
-const text = ['a Junior Full-Stack Developer', 'a Graphic Designer', 'a UI/UX Designer', 'not a human;)'];
+const text = ['a Junior Full-Stack Developer', 'a Graphic Designer', 'a UI/UX Designer'];
 const textArea = document.getElementById('typing');
 let i = 0
 let j = 0;

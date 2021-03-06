@@ -1,4 +1,4 @@
- const newsletter = document.querySelector('.newsletter');
+ const newsletter = document.querySelector('.contact');
  const notifyBtn = document.getElementById('notifyBtn');
  const closeBtn = document.getElementById('close');
 
