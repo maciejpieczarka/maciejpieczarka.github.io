@@ -1,4 +1,4 @@
-const countDate = new Date('7 1, 2021 00:00:00').getTime();
+const countDate = new Date('8 1, 2021 00:00:00').getTime();
 
 const timer = () => {
     const now = new Date().getTime();
